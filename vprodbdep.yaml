@@ -16,9 +16,9 @@ spec:
       spec:
         continers:
           - name: vprodb
-            image: vprofile/vprofiledb:v1
+            image: vprofile/vprofiledb:V1
             args:
-              - "ignore-db-dir=lost+fount"
+              - "--ignore-db-dir=lost+fount"
             volumeMounts:
               - mountPath: /var/lib/mysql
                 name: vpro-db-data
